@@ -15,11 +15,11 @@ let grid;
 let cols;
 let rows;
 
-let scale = 20;
+let scale =20;
 
 function setup()
 {
-  var canvas = createCanvas(600,600);
+  var canvas = createCanvas(500,500);
   canvas.parent("canvas")
   grid = make2dArray(40,40)
   
@@ -55,7 +55,7 @@ function draw()
       {
         fill (0)
       }
-      circle(x,y,scale,scale)
+      rect(x,y,scale,scale,5)
     }
   }
 
@@ -75,7 +75,7 @@ function draw()
          // count the live neighbours!
       let neighbours = count(grid,i,j);
 
-      if(state == 0 && neighbours==3)
+      if(state == 0 && neighbours==3)//overpopulation
       {
         nextGen[i][j] = 1;
       }

@@ -2,19 +2,12 @@
 <html lang="en">
 <head>
     <!-- Google tag (gtag.js) -->
-
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-7CHREE5FTX"></script>
-
 <script>
-
   window.dataLayer = window.dataLayer || [];
-
   function gtag(){dataLayer.push(arguments);}
-
   gtag('js', new Date());
-
   gtag('config', 'G-7CHREE5FTX');
-
 </script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -23,12 +16,10 @@
     <script src="sketch.js"></script>
     <style>
         #canvas{
-            align-items: center;
-            display: flex;
-            justify-content: center;
             border: solid rgb(255, 255, 255);
-            height: 400;
-            width: 600;
+            height: 500px;
+            width: 500px;
+            margin: auto;
         }
         body{
             background-color: blueviolet;
@@ -44,8 +35,9 @@
 </head>
 <body>
     <h1>The Game Of Life</h1>
-    <div id="canvas">
-
+    <div id="data">
+        Generation: 
     </div>
+    <div id="canvas"></div>
 </body>
 </html>
