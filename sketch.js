@@ -72,7 +72,7 @@ function draw()
 
 
 
-         // count the live neighbours!
+         // count the live neighbours!!
       let neighbours = count(grid,i,j);
 
       if(state == 0 && neighbours==3)//overpopulation
