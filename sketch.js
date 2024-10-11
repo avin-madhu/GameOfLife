@@ -10,11 +10,11 @@ function make2dArray(cols, rows)
    return arr;
 }
 
+let count_generations = 1
 
 let grid;
 let cols;
 let rows;
-
 let scale =20;
 
 function setup()
@@ -58,8 +58,8 @@ function draw()
       rect(x,y,scale,scale,5)
     }
   }
-
-
+  count_generations += 1
+  document.getElementById("gen-num").innerText  = "Generations: " + count_generations.toString()
   let nextGen = make2dArray(cols,rows)
   
 
